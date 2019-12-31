@@ -149,9 +149,9 @@
  \thispagestyle{empty}
  \begin{center}
   \fontsize{16pt}{24pt}\selectfont{
-   \@titleone\par
-   \@titletwo\par
-   \@titlethree\par
+   \MakeUppercase\@titleone\par
+   \MakeUppercase\@titletwo\par
+   \MakeUppercase\@titlethree\par
    \vfill
    BY\par
    \MakeUppercase\@author\par
@@ -176,9 +176,9 @@
  \setlength{\parindent}{0pt}
  % \fontdimen2\font =3pt
  \fontsize{11pt}{16.5pt}\selectfont{
-  \@titleone
-  \@titletwo
-  \@titlethree\par
+  \MakeUppercase\@titleone
+  \MakeUppercase\@titletwo
+  \MakeUppercase\@titlethree\par
   \vfill
   by\par
   \@author\par
