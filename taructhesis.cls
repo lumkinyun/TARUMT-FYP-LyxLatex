@@ -13,6 +13,7 @@
 \usepackage{indentfirst}
 \renewcommand{\baselinestretch}{1.25} %1.5 line spacing like MS Word
 
+\hyphenpenalty=4000\sloppy
 
 \usepackage{fancyhdr}
 % \pagestyle{fancy}
