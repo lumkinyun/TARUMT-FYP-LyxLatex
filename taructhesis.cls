@@ -198,7 +198,7 @@
   \vfill
   \@acadyear
   \vfill
-  Copyright {\textcopyright} 2019 by Tunku Abdul Rahman University College.
+  Copyright {\textcopyright} 2020 by Tunku Abdul Rahman University College.
 
   All rights reserved. No part of this dissertation may be reproduced, stored in a retrieval system, or transmitted in any form or by any means without the prior permission of Tunku Abdul Rahman University College.
 
