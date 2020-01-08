@@ -8,7 +8,7 @@ TARUC fyp template
 2. Download and install Lyx Editor from https://www.lyx.org/Download. Current version is LyX-233-Installer-1.exe
 
 ### Ubuntu
-1. Install the textlive-full and lyx package using command `sudo apt-get install texlive-full lyx -y`
+1. Install the textlive-full and lyx packages using command `sudo apt-get install texlive-full lyx -y`
 
 ## Usage
 
