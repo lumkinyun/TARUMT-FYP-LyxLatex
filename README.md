@@ -12,4 +12,4 @@ TARUC fyp template
 
 ## Usage
 
-Download the TARUC-FYP-LyxLatex template and open it. Try to preview it by view button or shortcut (Ctrl + R). It will preview the document if installation is done correctly.
+Download the TARUC-FYP-LyxLatex template and open it. Try to preview it by pressing view button or shortcut (Ctrl + R). It will preview the document if installation is done correctly.
