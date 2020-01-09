@@ -1,0 +1,17 @@
+chapter
+spacebar
+equation typing
+
+itemized
+numbered
+
+figure, location, 
+table
+short caption
+
+citation, hyperef
+coding
+appendix
+program listing
+insert datasheet
+
