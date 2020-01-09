@@ -1,3 +1,13 @@
+% Acknowledgement
+% =================================================
+% the thesis is created in Sept 2019 with the reference of the latex book class
+% Contributors:
+% Lum Kin Yun
+% Tee Zhen Wei
+% Copyright (c) 2019, taructhesis_lyx
+% All rights reserved.
+
+
 \LoadClass[oneside]{book}
 \ProvidesPackage{taructhesis}
 
