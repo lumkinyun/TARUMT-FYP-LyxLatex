@@ -6,7 +6,7 @@
 % Tee Zhen Wei
 % Copyright (c) 2019, taructhesis_lyx
 % All rights reserved.
-
+% Last modified 11-June-2020
 
 \LoadClass[oneside]{book}
 \ProvidesPackage{taructhesis}
@@ -17,7 +17,7 @@
 \RequirePackage[a4paper, top=25mm, bottom=25mm, left=35mm, right=25mm]{geometry}
 \RequirePackage{newtxtext,newtxmath}
 % \renewcommand{\normalsize}{\fontsize{11pt}{0pt}\selectfont}
-\renewcommand{\normalsize}{\fontsize{11pt}{36.5pt}\selectfont}
+% \renewcommand{\normalsize}{\fontsize{11pt}{36.5pt}\selectfont}
 %\setlength{\parskip}{11pt}
 \usepackage{graphicx}
 \usepackage{indentfirst}
@@ -181,15 +181,19 @@
 
 }
 
+% make first letter uppercase for title
+\usepackage{stringstrings}
+\newcommand{\firstcap}[1]{\caselower[e]{#1}\capitalize{\thestring}}
+
 \newcommand{\frontpage}
 {
  \thispagestyle{empty}
  \setlength{\parindent}{0pt}
  % \fontdimen2\font =3pt
  \fontsize{11pt}{16.5pt}\selectfont{
-  \MakeUppercase\@titleone
-  \MakeUppercase\@titletwo
-  \MakeUppercase\@titlethree\par
+  \firstcap\@titleone
+  \MakeLowercase\@titletwo
+  \MakeLowercase\@titlethree\par
   \vfill
   by\par
   \@author\par
@@ -248,10 +252,38 @@
  \pagebreak
 }
 
+\newcommand{\proposalcoverpage}
+{
+ \thispagestyle{empty}
+ \begin{center}
+  \fontsize{16pt}{24pt}\selectfont{
+  PROJECT PROPOSAL\par
+  \vphantom{}
+  OF\par
+    \vphantom{}
+   \MakeUppercase\@titleone\par
+   \MakeUppercase\@titletwo\par
+   \MakeUppercase\@titlethree\par
+   \vfill
+   BY\par
+   \MakeUppercase\@author\par
+   \vfill
+   \includegraphics[width=3.82in]{images/taruc_logo}\par
+   \vphantom{}
+   \MakeUppercase{\@department}\par
+   \MakeUppercase{\@faculty}\par
+   \MakeUppercase{\@school}\par
+   \MakeUppercase{\@location}\par
+   \vfill
+   \@acadyear
+  }
+  \pagebreak
+ \end{center}
+
+}
 
 
-
-\newcommand{\InsertFrontPages}
+\newcommand{\InsertThesisFrontPages}
 {
  \frontmatter
  \coverpage
@@ -259,6 +291,12 @@
  \declaration
  \setlength{\parindent}{1cm}
 
+}
+
+\newcommand{\InsertProposalFrontPages}
+{
+ \frontmatter
+ \proposalcoverpage
 }
 
 \newcommand{\InsertTOCPages}
@@ -280,3 +318,6 @@
 
  \mainmatter
 }
+
+%\setlength{\tabcolsep}{40pt}
+%\renewcommand{\arraystretch}{0.3}

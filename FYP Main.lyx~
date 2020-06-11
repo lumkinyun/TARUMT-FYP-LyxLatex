@@ -178,7 +178,7 @@ status open
 
 \begin_layout Plain Layout
 
-%
+
 \backslash
 InsertProposalFrontPages
 \end_layout
@@ -204,7 +204,7 @@ status open
 
 \begin_layout Plain Layout
 
-
+%
 \backslash
 InsertThesisFrontPages
 \end_layout
@@ -422,7 +422,7 @@ asdfdasfdasf
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
