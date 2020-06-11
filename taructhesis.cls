@@ -256,11 +256,11 @@
 {
  \thispagestyle{empty}
  \begin{center}
-  \fontsize{16pt}{24pt}\selectfont{
-  PROJECT PROPOSAL\par
-  \vphantom{}
-  OF\par
-    \vphantom{}
+   \fontsize{16pt}{24pt}\selectfont{
+    PROJECT PROPOSAL\par
+   \vphantom{}
+    OF\par
+   \vphantom{}
    \MakeUppercase\@titleone\par
    \MakeUppercase\@titletwo\par
    \MakeUppercase\@titlethree\par
@@ -297,6 +297,8 @@
 {
  \frontmatter
  \proposalcoverpage
+ \fontsize{11pt}{16.5pt}\selectfont{ }
+ \setlength{\parindent}{1cm}
 }
 
 \newcommand{\InsertTOCPages}
