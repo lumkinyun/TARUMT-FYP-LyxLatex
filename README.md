@@ -7,7 +7,8 @@ TARUC FYP template
 1. Download Protext from https://download.nus.edu.sg/mirror/ctan/systems/windows/protext/
 2. Extract the file and run setup.exe. Make full installation of MikTex only.
 ![Miktex Installation](/images/Miktex.png)
-2. Download and install Lyx Editor from https://www.lyx.org/Download. Current version is LyX-2351-Installer-3.exe
+
+3. Download and install Lyx Editor from https://www.lyx.org/Download. Current version is LyX-2351-Installer-3.exe
 
 ### Ubuntu
 1. Install the textlive-full and lyx packages using command `sudo apt-get install texlive-full lyx -y`
