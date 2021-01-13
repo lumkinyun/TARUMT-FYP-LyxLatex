@@ -275,7 +275,7 @@
    \MakeUppercase{\@school}\par
    \MakeUppercase{\@location}\par
    \vfill
-  %  \@acadyear
+   \@acadyear
   }
   \pagebreak
  \end{center}

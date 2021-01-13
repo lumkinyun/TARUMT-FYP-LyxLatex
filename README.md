@@ -22,6 +22,9 @@ TARUC FYP template
 
 
 ## Changelogs
+14-Jan-2021 
+- Minor proposal cover page adjustment
+
 11-June-2020 
 - Update Readme
 - Update to include fyp proposal
