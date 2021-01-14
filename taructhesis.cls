@@ -258,9 +258,9 @@
  \begin{center}
    \fontsize{16pt}{24pt}\selectfont{
     PROJECT PROPOSAL\par
-   \vphantom{}
-    OF\par
-   \vphantom{}
+   \vphantom{}\par
+    OF\par\par
+   \vphantom{}\par
    \MakeUppercase\@titleone\par
    \MakeUppercase\@titletwo\par
    \MakeUppercase\@titlethree\par
@@ -275,7 +275,7 @@
    \MakeUppercase{\@school}\par
    \MakeUppercase{\@location}\par
    \vfill
-   \@acadyear
+  %  \@acadyear
   }
   \pagebreak
  \end{center}
