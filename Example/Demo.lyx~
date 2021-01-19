@@ -866,11 +866,16 @@ Program code 1
 \begin_inset listings
 lstparams "language=Python,breaklines=true"
 inline false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
-# Program make a simple calculator
+import modules.config as config
+\end_layout
+
+\begin_layout Plain Layout
+
+from firebase_admin import db
 \end_layout
 
 \begin_layout Plain Layout
@@ -879,17 +884,7 @@ status open
 
 \begin_layout Plain Layout
 
-# This function adds two numbers
-\end_layout
-
-\begin_layout Plain Layout
-
-def add(x, y):
-\end_layout
-
-\begin_layout Plain Layout
-
-    return x + y
+data = ''
 \end_layout
 
 \begin_layout Plain Layout
@@ -898,55 +893,27 @@ def add(x, y):
 
 \begin_layout Plain Layout
 
-# This function subtracts two numbers
+def getFormB():
 \end_layout
 
 \begin_layout Plain Layout
 
-def subtract(x, y):
+    global data
 \end_layout
 
 \begin_layout Plain Layout
 
-    return x - y
+    ref = db.reference(f'/Form-B/{config.input_cfk.get()}')
 \end_layout
 
 \begin_layout Plain Layout
 
+    data = ref.get()
 \end_layout
 
 \begin_layout Plain Layout
 
-# This function multiplies two numbers
-\end_layout
-
-\begin_layout Plain Layout
-
-def multiply(x, y):
-\end_layout
-
-\begin_layout Plain Layout
-
-    return x * y
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-# This function divides two numbers
-\end_layout
-
-\begin_layout Plain Layout
-
-def divide(x, y):
-\end_layout
-
-\begin_layout Plain Layout
-
-    return x / y
+    return data
 \end_layout
 
 \begin_layout Plain Layout
@@ -959,70 +926,62 @@ def divide(x, y):
 
 \begin_layout Plain Layout
 
-print("Select operation.")
+def clearAll():
 \end_layout
 
 \begin_layout Plain Layout
 
-print("1.Add")
+    while(True):
 \end_layout
 
 \begin_layout Plain Layout
 
-print("2.Subtract")
+        try:
 \end_layout
 
 \begin_layout Plain Layout
 
-print("3.Multiply")
+            ids = list(config.driver.find_elements_by_xpath('//td/div/button'))
 \end_layout
 
 \begin_layout Plain Layout
 
-print("4.Divide")
+            if len(ids) == 16:
 \end_layout
 
 \begin_layout Plain Layout
 
+                break
 \end_layout
 
 \begin_layout Plain Layout
 
-while True:
+            # delete object
 \end_layout
 
 \begin_layout Plain Layout
 
-    # Take input from the user
+            ids = list(config.driver.find_elements_by_xpath('//td/div/a/i'))
 \end_layout
 
 \begin_layout Plain Layout
 
-    choice = input("Enter choice(1/2/3/4): ")
+            ids[1].click()
 \end_layout
 
 \begin_layout Plain Layout
 
+            config.driver.switch_to.alert.accept()
 \end_layout
 
 \begin_layout Plain Layout
 
-    # Check if choice is one of the four options
+        except:
 \end_layout
 
 \begin_layout Plain Layout
 
-    if choice in ('1', '2', '3', '4'):
-\end_layout
-
-\begin_layout Plain Layout
-
-        num1 = float(input("Enter first number: "))
-\end_layout
-
-\begin_layout Plain Layout
-
-        num2 = float(input("Enter second number: "))
+            continue
 \end_layout
 
 \begin_layout Plain Layout
@@ -1031,26 +990,21 @@ while True:
 
 \begin_layout Plain Layout
 
-        if choice == '1':
 \end_layout
 
 \begin_layout Plain Layout
 
-            print(num1, "+", num2, "=", add(num1, num2))
+def insertAll():
 \end_layout
 
 \begin_layout Plain Layout
 
+    global data
 \end_layout
 
 \begin_layout Plain Layout
 
-        elif choice == '2':
-\end_layout
-
-\begin_layout Plain Layout
-
-            print(num1, "-", num2, "=", subtract(num1, num2))
+    getFormB()
 \end_layout
 
 \begin_layout Plain Layout
@@ -1059,12 +1013,7 @@ while True:
 
 \begin_layout Plain Layout
 
-        elif choice == '3':
-\end_layout
-
-\begin_layout Plain Layout
-
-            print(num1, "*", num2, "=", multiply(num1, num2))
+    numline = len(data['data'])
 \end_layout
 
 \begin_layout Plain Layout
@@ -1073,27 +1022,127 @@ while True:
 
 \begin_layout Plain Layout
 
-        elif choice == '4':
+    for i in range(numline):
 \end_layout
 
 \begin_layout Plain Layout
 
-            print(num1, "/", num2, "=", divide(num1, num2))
+        # print(data[1])
 \end_layout
 
 \begin_layout Plain Layout
 
-        break
+        ids = list(config.driver.find_elements_by_xpath('//td/div/button'))
 \end_layout
 
 \begin_layout Plain Layout
 
-    else:
+        ids[0].click()
 \end_layout
 
 \begin_layout Plain Layout
 
-        print("Invalid Input")
+\end_layout
+
+\begin_layout Plain Layout
+
+        tempData = data['data'][i]
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        fillingArray = [
+\end_layout
+
+\begin_layout Plain Layout
+
+            {'dest': 'reqTopicLec', 'value': tempData['Lecture']['topic']},
+\end_layout
+
+\begin_layout Plain Layout
+
+            {'dest': 'reqRefLec', 'value': tempData['Lecture']['ref']},
+\end_layout
+
+\begin_layout Plain Layout
+
+            {'dest': 'reqTopicTut', 'value': tempData['Tutorial']['topic']},
+\end_layout
+
+\begin_layout Plain Layout
+
+            {'dest': 'reqRefTut', 'value': tempData['Tutorial']['ref']},
+\end_layout
+
+\begin_layout Plain Layout
+
+            {'dest': 'reqTopicPra', 'value': tempData['Practical']['topic']},
+\end_layout
+
+\begin_layout Plain Layout
+
+            {'dest': 'reqRefPra', 'value': tempData['Practical']['ref']},
+\end_layout
+
+\begin_layout Plain Layout
+
+        ]
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        for item in fillingArray:
+\end_layout
+
+\begin_layout Plain Layout
+
+            topic = config.driver.find_element_by_name(item['dest'])
+\end_layout
+
+\begin_layout Plain Layout
+
+            topic.clear()
+\end_layout
+
+\begin_layout Plain Layout
+
+            topic.send_keys(item['value'])
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        # save button
+\end_layout
+
+\begin_layout Plain Layout
+
+        ids = list(config.driver.find_elements_by_xpath(
+\end_layout
+
+\begin_layout Plain Layout
+
+            '//*[@id="form1"]/div[10]/div/input'))[0]
+\end_layout
+
+\begin_layout Plain Layout
+
+        ids.click()
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \end_inset
