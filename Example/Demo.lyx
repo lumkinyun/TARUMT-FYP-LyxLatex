@@ -780,8 +780,8 @@ lipsum[1-1]
 \begin_layout Standard
 1.5 line spacing 
 \begin_inset CommandInset citation
-LatexCommand citep
-key "Lamport:1994,axelsson:1998,lyx:download,fahmi:2004,protext:download,utm:thesis:manual"
+LatexCommand citet
+key "Lamport:1994,axelsson:1998"
 literal "true"
 
 \end_inset
