@@ -139,6 +139,7 @@
 \newcommand{\supervisor}[1]{\def\@supervisor{#1}}
 \newcommand{\supervisorParticular}[1]{\def\@supervisorParticular{#1}}
 \newcommand{\degree}[1]{\def\@degree{#1}}
+\newcommand{\copyrightYear}[1]{\def\@copyrightYear{#1}}
 %\newcommand{\date}[1]{\def\@date{#1}}
 \titleone{}
 \titletwo{}
@@ -212,7 +213,7 @@
   \vfill
   \@acadyear
   \vfill
-  Copyright {\textcopyright} 2020 by Tunku Abdul Rahman University College.
+  Copyright {\textcopyright} {\@copyrightYear} by Tunku Abdul Rahman University College.
 
   All rights reserved. No part of this dissertation may be reproduced, stored in a retrieval system, or transmitted in any form or by any means without the prior permission of Tunku Abdul Rahman University College.
 
