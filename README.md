@@ -23,7 +23,7 @@ MiKTeX is depreciated. Recommend to use TexLive. If you have previous installati
 ## Usage
 
 1. Download and extract the TARUC-FYP-LyxLatex template. \
-![FYP template](/images/download_template.png)
+![FYP template](/images/fyp-template.png)
 
 2. Double click to open the `FYP Main.lyx`. Try to preview it by pressing view button or shortcut (Ctrl + R). It will preview the document if installation is done correctly.
 
