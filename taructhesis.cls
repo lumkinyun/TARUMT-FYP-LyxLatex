@@ -141,7 +141,6 @@
 \newcommand{\supervisor}[1]{\def\@supervisor{#1}}
 \newcommand{\supervisorParticular}[1]{\def\@supervisorParticular{#1}}
 \newcommand{\degree}[1]{\def\@degree{#1}}
-\newcommand{\copyrightYear}[1]{\def\@copyrightYear{#1}}
 %\newcommand{\date}[1]{\def\@date{#1}}
 \titleone{}
 \titletwo{}
@@ -190,6 +189,7 @@
 
 \newcommand{\frontpage}
 {
+<<<<<<< HEAD
 	\thispagestyle{empty}
 	\setlength{\parindent}{0pt}
 	% \fontdimen2\font =3pt
@@ -221,6 +221,39 @@
 
 	}
 	\pagebreak
+=======
+ \thispagestyle{empty}
+ \setlength{\parindent}{0pt}
+ % \fontdimen2\font =3pt
+ \fontsize{11pt}{16.5pt}\selectfont{
+  \firstcap\@titleone
+  \MakeLowercase\@titletwo
+  \MakeLowercase\@titlethree\par
+  \vfill
+  by\par
+  \@author\par
+
+  \vfill
+  \noindent Supervisor: \hspace{7mm} \@supervisor\par
+  \noindent \hphantom{Supervisor:x}\hspace{7mm} \@supervisorParticular
+  \vfill
+  Project dissertation submitted in partial fulfilment of the requirements for the award of the \par
+  \@degree.
+  \vfill
+  \@department\par
+  \@faculty\par
+  \@school\par
+  \@location\par
+  \vfill
+  \@acadyear
+  \vfill
+  Copyright {\textcopyright} 2020 by Tunku Abdul Rahman University College.
+
+  All rights reserved. No part of this dissertation may be reproduced, stored in a retrieval system, or transmitted in any form or by any means without the prior permission of Tunku Abdul Rahman University College.
+
+ }
+ \pagebreak
+>>>>>>> parent of 57eb775 (updated copyright year and texlive)
 }
 
 
