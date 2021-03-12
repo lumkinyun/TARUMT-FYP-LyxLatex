@@ -136,7 +136,7 @@ department{Department of Mechanical Engineering}
 
 
 \backslash
-acadyear{2019/20}
+acadyear{2020/21}
 \end_layout
 
 \begin_layout Plain Layout
@@ -166,6 +166,13 @@ degree{Bachelor of Mechanical Engineering with Honours}
 
 \backslash
 date{20-9-2019}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+copyrightYear{2021}
 \end_layout
 
 \end_inset
@@ -315,7 +322,7 @@ lipsum[1-1]
 
 \begin_layout Standard
 \begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
