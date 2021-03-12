@@ -189,6 +189,7 @@
 {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	\thispagestyle{empty}
 	\setlength{\parindent}{0pt}
 	% \fontdimen2\font =3pt
@@ -223,6 +224,8 @@
 =======
 =======
 >>>>>>> parent of 36f6bd8 (minor update)
+=======
+>>>>>>> parent of 36f6bd8 (minor update)
  \thispagestyle{empty}
  \setlength{\parindent}{0pt}
  % \fontdimen2\font =3pt
@@ -249,7 +252,11 @@
   \@acadyear
   \vfill
 <<<<<<< HEAD
+<<<<<<< HEAD
   Copyright {\textcopyright} 2020 by Tunku Abdul Rahman University College.
+=======
+  Copyright {\textcopyright} {\@copyrightYear} by Tunku Abdul Rahman University College.
+>>>>>>> parent of 36f6bd8 (minor update)
 =======
   Copyright {\textcopyright} {\@copyrightYear} by Tunku Abdul Rahman University College.
 >>>>>>> parent of 36f6bd8 (minor update)
@@ -259,7 +266,10 @@
  }
  \pagebreak
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> parent of 57eb775 (updated copyright year and texlive)
+=======
+>>>>>>> parent of 36f6bd8 (minor update)
 =======
 >>>>>>> parent of 36f6bd8 (minor update)
 }
