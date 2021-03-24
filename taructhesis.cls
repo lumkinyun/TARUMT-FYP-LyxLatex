@@ -221,6 +221,7 @@
 
 	}
 	\pagebreak
+	\setlength{\parindent}{1cm} %restore par indent
 }
 
 
