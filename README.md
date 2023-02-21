@@ -1,5 +1,5 @@
 # TARUC-FYP-LyxLatex
-The template can be used for both proposal and dissertation.
+The template can be used for both TAR UMT Engineering Final Year Project proposal and dissertation.
 
 ## Installation Guide
 
@@ -29,6 +29,10 @@ MiKTeX is depreciated. Recommend to use TexLive. If you have previous installati
 
 
 ## Changelogs
+21-Feb-2023
+- Update IEEE referencing 
+- Change TAR UMT logo and name
+
 12-Mar-2021
 - Adjusted indentation and paragraph spacing
 - Minor headers spacing adjustment
