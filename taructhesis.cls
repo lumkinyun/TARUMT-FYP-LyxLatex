@@ -150,7 +150,7 @@
 \regno{}
 \department{}
 \faculty{Faculty of Engineering and Technology}
-\school{Tunku Abdul Rahman University College}
+\school{Tunku Abdul Rahman University of Management and Technology}
 \location{Kuala Lumpur}
 \acadyear{}
 \supervisor{}
@@ -171,7 +171,7 @@
 			BY\par
 			\MakeUppercase\@author\par
 			\vfill
-			\includegraphics[width=3.82in]{images/taruc_logo}\par
+			\includegraphics[width=3.82in]{images/tarumt-logo}\par
 			\vphantom{}
 			\MakeUppercase{\@department}\par
 			\MakeUppercase{\@faculty}\par
@@ -216,9 +216,9 @@
 		\vfill
 		\@acadyear
 		\vfill
-		Copyright {\textcopyright} {\@copyrightYear} by Tunku Abdul Rahman University College.
+		Copyright {\textcopyright} {\@copyrightYear} by Tunku Abdul Rahman University of Management and Technology.
 
-		All rights reserved. No part of this dissertation may be reproduced, stored in a retrieval system, or transmitted in any form or by any means without the prior permission of Tunku Abdul Rahman University College.
+		All rights reserved. No part of this dissertation may be reproduced, stored in a retrieval system, or transmitted in any form or by any means without the prior permission of Tunku Abdul Rahman University of Management and Technology.
 
 	}
 	\pagebreak
@@ -233,7 +233,7 @@
 	\setcounter{page}{1}
 	\chapter*{Declaration}
 	\addcontentsline{toc}{chapter}{Declaration}
-	``The project submitted herewith is a result of my own investigations. All information that has been obtained from other sources had been fully acknowledged. I understand that plagiarism constitutes a breach of University College rules and regulations and would be subjected to disciplinary actions''
+	``The project submitted herewith is a result of my own investigations. All information that has been obtained from other sources had been fully acknowledged. I understand that plagiarism constitutes a breach of university rules and regulations and would be subjected to disciplinary actions''
 	\par
 	\vphantom{}
 	\vphantom{}
@@ -274,7 +274,7 @@
 			BY\par
 			\MakeUppercase\@author\par
 			\vfill
-			\includegraphics[width=3.82in]{images/taruc_logo}\par
+			\includegraphics[width=3.82in]{images/tarumt-logo}\par
 			\vphantom{}
 			\MakeUppercase{\@department}\par
 			\MakeUppercase{\@faculty}\par

@@ -172,7 +172,7 @@ date{20-9-2019}
 
 
 \backslash
-copyrightYear{2021}
+copyrightYear{2023}
 \end_layout
 
 \end_inset
@@ -435,7 +435,7 @@ status collapsed
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename images/taruc_logo.png
+	filename images/tarumt-logo.png
 	lyxscale 20
 	width 50page%
 
