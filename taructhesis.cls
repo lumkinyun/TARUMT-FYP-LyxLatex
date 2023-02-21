@@ -12,6 +12,7 @@
 \ProvidesPackage{taructhesis}
 
 \usepackage{lipsum}
+\usepackage[noadjust]{cite}
 \renewcommand\bibname{References}
 %Page Margin
 \RequirePackage[a4paper, top=25mm, bottom=25mm, left=35mm, right=25mm]{geometry}
