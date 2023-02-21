@@ -1,4 +1,4 @@
-# TARUC-FYP-LyxLatex
+# TARUMT-FYP-LyxLatex
 The template can be used for both TAR UMT Engineering Final Year Project proposal and dissertation.
 
 ## Installation Guide
@@ -22,7 +22,7 @@ MiKTeX is depreciated. Recommend to use TexLive. If you have previous installati
 
 ## Usage
 
-1. Download and extract the TARUC-FYP-LyxLatex template. \
+1. Download and extract the TARUMT-FYP-LyxLatex template. \
 ![FYP template](/images/download_template.png)
 
 2. Double click to open the `FYP Main.lyx`. Try to preview it by pressing view button or shortcut (Ctrl + R). It will preview the document if installation is done correctly.
