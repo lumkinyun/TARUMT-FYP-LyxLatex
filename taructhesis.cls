@@ -233,7 +233,7 @@
 	\setcounter{page}{1}
 	\chapter*{Declaration}
 	\addcontentsline{toc}{chapter}{Declaration}
-	``The project submitted herewith is a result of my own investigations. All information that has been obtained from other sources had been fully acknowledged. I understand that plagiarism constitutes a breach of university rules and regulations and would be subjected to disciplinary actions''
+	``The project submitted herewith is a result of my own investigations. All information that has been obtained from other sources had been fully acknowledged, including the use of generative AI technology. I understand that plagiarism constitutes a breach of university rules and regulations and would be subjected to disciplinary actions''
 	\par
 	\vphantom{}
 	\vphantom{}
@@ -302,6 +302,7 @@
 	\frontmatter
 	\proposalcoverpage
 	\fontsize{11pt}{16.5pt}\selectfont{ }
+	\declaration
 }
 
 \newcommand{\InsertTOCPages}
