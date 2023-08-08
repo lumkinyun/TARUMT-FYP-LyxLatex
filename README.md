@@ -7,7 +7,7 @@ The template can be used for both TAR UMT Engineering Final Year Project proposa
 
 MiKTeX is depreciated. Recommend to use TexLive. If you have previous installation of MikTeX and LyX, please uninstall them all and install using the following approach. 
 
-1. Download texlive.iso from https://download.nus.edu.sg/mirror/ctan/systems/texlive/Images/
+1. Download texlive.iso from http://mirrors.ctan.org/systems/texlive/Images/texlive.iso
 
 2. Extract the file and right click on "install-tl-windows.bat" and Run as administrator. \
 ![TexLive Installation](/images/TexLive_RunAsAdmin.png)
@@ -29,6 +29,9 @@ MiKTeX is depreciated. Recommend to use TexLive. If you have previous installati
 
 
 ## Changelogs
+8-Aug-2023
+-update generative AI declaration
+
 21-Feb-2023
 - Update IEEE referencing 
 - Change TAR UMT logo and name
