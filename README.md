@@ -5,7 +5,7 @@ The template can be used for both TAR UMT Engineering Final Year Project proposa
 
 ### Windows
 
-MiKTeX is depreciated. Recommend to use TexLive. If you have previous installation of MikTeX and LyX, please uninstall them all and install using the following approach. 
+Install TexLive then LyX. Follow the instructions below:  
 
 1. Download texlive.iso from http://mirrors.ctan.org/systems/texlive/Images/texlive.iso
 
