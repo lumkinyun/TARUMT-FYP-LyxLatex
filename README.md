@@ -7,7 +7,7 @@ The template can be used for both TAR UMT Engineering Final Year Project proposa
 
 Install TexLive then LyX. Follow the instructions below:  
 
-1. Download texlive.iso from http://mirrors.ctan.org/systems/texlive/Images/texlive.iso
+1. Download texlive.iso from https://mirror.unpad.ac.id/ctan/systems/texlive/Images/texlive.iso
 
 2. Extract the file and right click on "install-tl-windows.bat" and Run as administrator. \
 ![TexLive Installation](/images/TexLive_RunAsAdmin.png)
